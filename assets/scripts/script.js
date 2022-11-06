@@ -27,21 +27,25 @@ if (thisHour > 17) {
 } else if (thisHour <= 16 && thisHour > 15) {
   $(".input-group").css("background-color", "#d9e9e8");
   $("#input9").css({ "background-color": "green" });
+  $("#input8").css({ "background-color": "red" });
 } else if (thisHour <= 15 && thisHour > 14) {
   $(".input-group").css("background-color", "#d9e9e8");
   $("#input9").css({ "background-color": "green" });
   $("#input8").css({ "background-color": "green" });
+  $("#input7").css({ "background-color": "red" });
 } else if (thisHour <= 14 && thisHour > 13) {
   $(".input-group").css("background-color", "#d9e9e8");
   $("#input9").css({ "background-color": "green" });
   $("#input8").css({ "background-color": "green" });
   $("#input7").css({ "background-color": "green" });
+  $("#input6").css({ "background-color": "red" });
 } else if (thisHour <= 13 && thisHour > 12) {
   $(".input-group").css("background-color", "#d9e9e8");
   $("#input9").css({ "background-color": "green" });
   $("#input8").css({ "background-color": "green" });
   $("#input7").css({ "background-color": "green" });
   $("#input6").css({ "background-color": "green" });
+  $("#input5").css({ "background-color": "red" });
 } else if (thisHour <= 12 && thisHour > 11) {
   $(".input-group").css("background-color", "#d9e9e8");
   $("#input9").css({ "background-color": "green" });
@@ -49,6 +53,7 @@ if (thisHour > 17) {
   $("#input7").css({ "background-color": "green" });
   $("#input6").css({ "background-color": "green" });
   $("#input5").css({ "background-color": "green" });
+  $("#input4").css({ "background-color": "red" });
 } else if (thisHour <= 11 && thisHour > 10) {
   $(".input-group").css("background-color", "#d9e9e8");
   $("#input9").css({ "background-color": "green" });
@@ -57,6 +62,7 @@ if (thisHour > 17) {
   $("#input6").css({ "background-color": "green" });
   $("#input5").css({ "background-color": "green" });
   $("#input4").css({ "background-color": "green" });
+  $("#input3").css({ "background-color": "red" });
 } else if (thisHour <= 10 && thisHour > 9) {
   $(".input-group").css("background-color", "#d9e9e8");
   $("#input9").css({ "background-color": "green" });
@@ -66,6 +72,7 @@ if (thisHour > 17) {
   $("#input5").css({ "background-color": "green" });
   $("#input4").css({ "background-color": "green" });
   $("#input3").css({ "background-color": "green" });
+  $("#input2").css({ "background-color": "red" });
 } else if (thisHour <= 9 && thisHour > 8) {
   $(".input-group").css("background-color", "#d9e9e8");
   $("#input9").css({ "background-color": "green" });
@@ -76,6 +83,7 @@ if (thisHour > 17) {
   $("#input4").css({ "background-color": "green" });
   $("#input3").css({ "background-color": "green" });
   $("#input2").css({ "background-color": "green" });
+  $("#input1").css({ "background-color": "red" });
 } else if (thisHour < 8 && thisHour > 7) {
   $("#input9").css({ "background-color": "green" });
   $("#input8").css({ "background-color": "green" });
