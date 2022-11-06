@@ -7,6 +7,7 @@ A work scheduler written in JQuery with bootstrap.
 ## Usage
 
 [Link to deployed app](https://lesley-byte.github.io/byteSchedule/)
+
 ![screenshot](./assets/images/screenshot.png)
 
 ## Credits
