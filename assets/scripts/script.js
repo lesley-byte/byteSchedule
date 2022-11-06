@@ -28,3 +28,7 @@ class leapYear {
 var thursJan10 = new nonLeapYear("2022")[10];
 thursJan10[10] = "doctor's Appointment";
 console.log(thursJan10);
+var now = dayjs();
+
+$("#currentDay").css({ "background-color": "#d9e9e8", color: "#1a1a1a" });
+$("#currentDay").text("Today is " + now.format("dddd, MMMM D, YYYY"));
