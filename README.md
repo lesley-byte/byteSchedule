@@ -12,7 +12,7 @@ A work scheduler written in JQuery with bootstrap.
 
 ## Credits
 
-Thank you to friends and family for their support.
+Thank you to friends and family for their support. I also want to thank my tutor Sean New for his help and guidance. His git hub is [here](https://github.com/snew430).
 
 ## License
 
@@ -25,6 +25,3 @@ MIT License
 ## Tests
 
 No tests are available at this time.
-
-
-
