@@ -17,67 +17,66 @@
   <header class="jumbotron">
     <h1 class="display-3">Work Day Scheduler</h1>
     <p class="lead">A simple calendar app for scheduling your work day</p>
-    <div class="d-flex justify-content-center">
-      <button class="btn btn-primary" id="decrement-btn" type="button">-</button>
-      <p id="currentDay" class="lead"></p>
-      <button class="btn btn-primary" id="increment-btn" type="button">+</button>
-    </div>
+    <p id="currentDay" class="lead"></p>
   </header>
   <div class="container">
     <!-- Timeblocks for go here -->
-    <div class="input-group input-group-lg">
-      <span class="input-group-text" id="inputGroup-sizing-lg2">09:00 am</span>
+    <div class="input-group input-group-lg row time-block">
+      <span type="text" placeholder="09:00 am" label="" class="input-group-text hour" id="inputGroup-sizing-lg1">09:00
+        am</span>
       <input type="text" class="form-control" aria-label="Sizing example input" id="input1"
-        aria-describedby="inputGroup-sizing-lg button-addon1"><button class="btn btn-outline-secondary" type="button"
-        id="button-addon1">Button</button>
+        aria-describedby="inputGroup-sizing-lg button-addon1"><button class="btn btn-outline-light saveBtn"
+        type="button" id="button-addon1">Button</button>
     </div>
-    <div class="input-group input-group-lg">
-      <span class="input-group-text" id="inputGroup-sizing-lg2">10:00 am</span>
+    <div class="input-group input-group-lg row time-block">
+      <span type="text" placeholder="10:00 am" label="" class="input-group-text hour" id="inputGroup-sizing-lg2">10:00
+        am</span>
       <input type="text" class="form-control" aria-label="Sizing example input" id="input2"
-        aria-describedby="inputGroup-sizing-lg button-addon2"><button class="btn btn-outline-secondary" type="button"
-        id="button-addon2">Button</button>
+        aria-describedby="inputGroup-sizing-lg button-addon2"><button class="btn btn-outline-light saveBtn"
+        type="button" id="button-addon2">Button</button>
     </div>
-    <div class="input-group input-group-lg">
-      <span class="input-group-text" id="inputGroup-sizing-lg3">11:00 am</span>
+    <div class="input-group input-group-lg row time-block">
+      <span type="text" placeholder="09:00 am" label="" class="input-group-text hour" id="inputGroup-sizing-lg3">11:00
+        am</span>
       <input type="text" class="form-control" aria-label="Sizing example input" id="input3"
-        aria-describedby="inputGroup-sizing-lg button-addon3"><button class="btn btn-outline-secondary" type="button"
-        id="button-addon3">Button</button>
+        aria-describedby="inputGroup-sizing-lg button-addon3"><button class="btn btn-outline-light saveBtn"
+        type="button" id="button-addon3">Button</button>
     </div>
-    <div class="input-group input-group-lg">
-      <span class="input-group-text" id="inputGroup-sizing-lg4">12:00 pm</span>
+    <div class="input-group input-group-lg row time-block">
+      <span class="input-group-text hour" id="inputGroup-sizing-lg4">12:00 pm</span>
       <input type="text" class="form-control" aria-label="Sizing example input" id="input4"
-        aria-describedby="inputGroup-sizing-lg button-addon4"><button class="btn btn-outline-secondary" type="button"
-        id="button-addon4">Button</button>
+        aria-describedby="inputGroup-sizing-lg button-addon4"><button class="btn btn-outline-light saveBtn"
+        type="button" id="button-addon4">Button</button>
     </div>
-    <div class="input-group input-group-lg">
-      <span class="input-group-text" id="inputGroup-sizing-lg5">01:00 pm</span>
+    <div class="input-group input-group-lg row time-block">
+      <span class="input-group-text hour" id="inputGroup-sizing-lg5">01:00 pm</span>
       <input type="text" class="form-control" aria-label="Sizing example input" id="input5"
-        aria-describedby="inputGroup-sizing-lg button-addon5"><button class="btn btn-outline-secondary" type="button"
-        id="button-addon5">Button</button>
+        aria-describedby="inputGroup-sizing-lg button-addon5"><button class="btn btn-outline-light saveBtn"
+        type="button" id="button-addon5">Button</button>
     </div>
-    <div class="input-group input-group-lg">
-      <span class="input-group-text" id="inputGroup-sizing-lg6">02:00 pm</span>
+    <div class="input-group input-group-lg row time-block">
+      <span class="input-group-text hour" id="inputGroup-sizing-lg6">02:00 pm</span>
       <input type="text" class="form-control" aria-label="Sizing example input" id="input6"
-        aria-describedby="inputGroup-sizing-lg button-addon6"><button class="btn btn-outline-secondary" type="button"
-        id="button-addon6">Button</button>
+        aria-describedby="inputGroup-sizing-lg button-addon6"><button class="btn btn-outline-light saveBtn"
+        type="button" id="button-addon6">Button</button>
     </div>
-    <div class="input-group input-group-lg">
-      <span class="input-group-text" id="inputGroup-sizing-lg7">03:00 pm</span>
+    <div class="input-group input-group-lg row time-block">
+      <span class="input-group-text hour" id="inputGroup-sizing-lg7">03:00 pm</span>
       <input type="text" class="form-control" aria-label="Sizing example input" id="input7"
-        aria-describedby="inputGroup-sizing-lg button-addon7"><button class="btn btn-outline-secondary" type="button"
-        id="button-addon7">Button</button>
+        aria-describedby="inputGroup-sizing-lg button-addon7"><button class="btn btn-outline-light saveBtn"
+        type="button" id="button-addon7">Button</button>
     </div>
-    <div class="input-group input-group-lg">
-      <span class="input-group-text" id="inputGroup-sizing-lg8">04:00 pm</span>
+    <div class="input-group input-group-lg row time-block">
+      <span class="input-group-text hour" id="inputGroup-sizing-lg8">04:00 pm</span>
       <input type="text" class="form-control" aria-label="Sizing example input" id="input8"
-        aria-describedby="inputGroup-sizing-lg button-addon8"><button class="btn btn-outline-secondary" type="button"
-        id="button-addon8">Button</button>
+        aria-describedby="inputGroup-sizing-lg button-addon8"><button class="btn btn-outline-light saveBtn"
+        type="button" id="button-addon8">Button</button>
     </div>
-    <div class="input-group input-group-lg">
-      <span class="input-group-text" id="inputGroup-sizing-lg9">05:00 pm</span>
+    <div class="input-group input-group-lg row time-block">
+      <span class="input-group-text hour" id="inputGroup-sizing-lg9">05:00 pm</span>
       <input type="text" class="form-control" aria-label="Sizing example input" id="input9"
-        aria-describedby="inputGroup-sizing-lg button-addon9"><button class="btn btn-outline-secondary" type="button"
-        id="button-addon9">Button</button>
+        aria-describedby="inputGroup-sizing-lg button-addon9"><button class="btn btn-outline-light saveBtn"
+        type="button" id="button-addon9">Button</button>
     </div>
 
 

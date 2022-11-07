@@ -21,25 +21,25 @@ function logger() {
 
 function setColors() {
   if (today0 > today) {
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "green" });
-    $("#input7").css({ "background-color": "green" });
-    $("#input6").css({ "background-color": "green" });
-    $("#input5").css({ "background-color": "green" });
-    $("#input4").css({ "background-color": "green" });
-    $("#input3").css({ "background-color": "green" });
-    $("#input2").css({ "background-color": "green" });
-    $("#input1").css({ "background-color": "green" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#77dd77" });
+    $("#input7").css({ "background-color": "#77dd77" });
+    $("#input6").css({ "background-color": "#77dd77" });
+    $("#input5").css({ "background-color": "#77dd77" });
+    $("#input4").css({ "background-color": "#77dd77" });
+    $("#input3").css({ "background-color": "#77dd77" });
+    $("#input2").css({ "background-color": "#77dd77" });
+    $("#input1").css({ "background-color": "#77dd77" });
   } else if (today0 <= today) {
-    $("#input9").css({ "background-color": "dimgrey" });
-    $("#input8").css({ "background-color": "dimgrey" });
-    $("#input7").css({ "background-color": "dimgrey" });
-    $("#input6").css({ "background-color": "dimgrey" });
-    $("#input5").css({ "background-color": "dimgrey" });
-    $("#input4").css({ "background-color": "dimgrey" });
-    $("#input3").css({ "background-color": "dimgrey" });
-    $("#input2").css({ "background-color": "dimgrey" });
-    $("#input1").css({ "background-color": "dimgrey" });
+    $("#input9").css({ "background-color": "#d3d3d3" });
+    $("#input8").css({ "background-color": "#d3d3d3" });
+    $("#input7").css({ "background-color": "#d3d3d3" });
+    $("#input6").css({ "background-color": "#d3d3d3" });
+    $("#input5").css({ "background-color": "#d3d3d3" });
+    $("#input4").css({ "background-color": "#d3d3d3" });
+    $("#input3").css({ "background-color": "#d3d3d3" });
+    $("#input2").css({ "background-color": "#d3d3d3" });
+    $("#input1").css({ "background-color": "#d3d3d3" });
     //if hour is greater than 5pm, then set background color of .input-group to grey
   }
   if (thisHour0 > 17) {
@@ -47,111 +47,89 @@ function setColors() {
     $(".input-group").css("background-color", "#d9e9e8");
   } else if (thisHour0 <= 16 && thisHour0 > 15) {
     $(".input-group").css("background-color", "#d9e9e8");
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "red" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#ff6961" });
   } else if (thisHour0 <= 15 && thisHour0 > 14) {
     $(".input-group").css("background-color", "#d9e9e8");
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "green" });
-    $("#input7").css({ "background-color": "red" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#77dd77" });
+    $("#input7").css({ "background-color": "#ff6961" });
   } else if (thisHour0 <= 14 && thisHour0 > 13) {
     $(".input-group").css("background-color", "#d9e9e8");
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "green" });
-    $("#input7").css({ "background-color": "green" });
-    $("#input6").css({ "background-color": "red" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#77dd77" });
+    $("#input7").css({ "background-color": "#77dd77" });
+    $("#input6").css({ "background-color": "#ff6961" });
   } else if (thisHour0 <= 13 && thisHour0 > 12) {
     $(".input-group").css("background-color", "#d9e9e8");
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "green" });
-    $("#input7").css({ "background-color": "green" });
-    $("#input6").css({ "background-color": "green" });
-    $("#input5").css({ "background-color": "red" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#77dd77" });
+    $("#input7").css({ "background-color": "#77dd77" });
+    $("#input6").css({ "background-color": "#77dd77" });
+    $("#input5").css({ "background-color": "#ff6961" });
   } else if (thisHour0 <= 12 && thisHour0 > 11) {
     $(".input-group").css("background-color", "#d9e9e8");
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "green" });
-    $("#input7").css({ "background-color": "green" });
-    $("#input6").css({ "background-color": "green" });
-    $("#input5").css({ "background-color": "green" });
-    $("#input4").css({ "background-color": "red" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#77dd77" });
+    $("#input7").css({ "background-color": "#77dd77" });
+    $("#input6").css({ "background-color": "#77dd77" });
+    $("#input5").css({ "background-color": "#77dd77" });
+    $("#input4").css({ "background-color": "#ff6961" });
   } else if (thisHour0 <= 11 && thisHour0 > 10) {
     $(".input-group").css("background-color", "#d9e9e8");
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "green" });
-    $("#input7").css({ "background-color": "green" });
-    $("#input6").css({ "background-color": "green" });
-    $("#input5").css({ "background-color": "green" });
-    $("#input4").css({ "background-color": "green" });
-    $("#input3").css({ "background-color": "red" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#77dd77" });
+    $("#input7").css({ "background-color": "#77dd77" });
+    $("#input6").css({ "background-color": "#77dd77" });
+    $("#input5").css({ "background-color": "#77dd77" });
+    $("#input4").css({ "background-color": "#77dd77" });
+    $("#input3").css({ "background-color": "#ff6961" });
   } else if (thisHour0 <= 10 && thisHour0 > 9) {
     $(".input-group").css("background-color", "#d9e9e8");
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "green" });
-    $("#input7").css({ "background-color": "green" });
-    $("#input6").css({ "background-color": "green" });
-    $("#input5").css({ "background-color": "green" });
-    $("#input4").css({ "background-color": "green" });
-    $("#input3").css({ "background-color": "green" });
-    $("#input2").css({ "background-color": "red" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#77dd77" });
+    $("#input7").css({ "background-color": "#77dd77" });
+    $("#input6").css({ "background-color": "#77dd77" });
+    $("#input5").css({ "background-color": "#77dd77" });
+    $("#input4").css({ "background-color": "#77dd77" });
+    $("#input3").css({ "background-color": "#77dd77" });
+    $("#input2").css({ "background-color": "#ff6961" });
   } else if (thisHour0 <= 9 && thisHour0 > 8) {
     $(".input-group").css("background-color", "#d9e9e8");
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "green" });
-    $("#input7").css({ "background-color": "green" });
-    $("#input6").css({ "background-color": "green" });
-    $("#input5").css({ "background-color": "green" });
-    $("#input4").css({ "background-color": "green" });
-    $("#input3").css({ "background-color": "green" });
-    $("#input2").css({ "background-color": "green" });
-    $("#input1").css({ "background-color": "red" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#77dd77" });
+    $("#input7").css({ "background-color": "#77dd77" });
+    $("#input6").css({ "background-color": "#77dd77" });
+    $("#input5").css({ "background-color": "#77dd77" });
+    $("#input4").css({ "background-color": "#77dd77" });
+    $("#input3").css({ "background-color": "#77dd77" });
+    $("#input2").css({ "background-color": "#77dd77" });
+    $("#input1").css({ "background-color": "#ff6961" });
   } else if (thisHour0 < 8 && thisHour0 > 7) {
-    $("#input9").css({ "background-color": "green" });
-    $("#input8").css({ "background-color": "green" });
-    $("#input7").css({ "background-color": "green" });
-    $("#input6").css({ "background-color": "green" });
-    $("#input5").css({ "background-color": "green" });
-    $("#input4").css({ "background-color": "green" });
-    $("#input3").css({ "background-color": "green" });
-    $("#input2").css({ "background-color": "green" });
-    $("#input1").css({ "background-color": "green" });
+    $("#input9").css({ "background-color": "#77dd77" });
+    $("#input8").css({ "background-color": "#77dd77" });
+    $("#input7").css({ "background-color": "#77dd77" });
+    $("#input6").css({ "background-color": "#77dd77" });
+    $("#input5").css({ "background-color": "#77dd77" });
+    $("#input4").css({ "background-color": "#77dd77" });
+    $("#input3").css({ "background-color": "#77dd77" });
+    $("#input2").css({ "background-color": "#77dd77" });
+    $("#input1").css({ "background-color": "#77dd77" });
   }
 }
-// This will all be JQuery
-class julianDay {
-  constructor(dayOfYear) {
-    this.dayOfYear = dayOfYear;
-    for (let i = 9; i < 18; i++) {
-      let timeOfDay = i;
-      this[timeOfDay] = "";
-    }
-  }
-}
-// add event listener to the button0 that will increase now by 1 day
-$("#increment-btn").click(function () {
-  now0 = now0.add(1, "day");
-  today0 = now0.date();
-  thisDay0 = now0.day();
-  thisHour0 = now0.hour();
-  // update the date on the page
-  $("#currentDay").text(now0.format("dddd, MMMM D, YYYY"));
-  setColors();
-});
-
-$("#decrement-btn").click(function () {
-  now0 = now0.subtract(1, "day");
-  today0 = now0.date();
-  thisDay0 = now0.day();
-  thisHour0 = now0.hour();
-  // update the date on the page
-  $("#currentDay").text(now0.format("dddd, MMMM D, YYYY"));
-  setColors();
-});
-
 $("#currentDay").text("Today is " + now.format("dddd, MMMM D, YYYY"));
 setColors();
 logger();
 $("#input1").attr("placeholder", localStorage.getItem("input1"));
+$("#input2").attr("placeholder", localStorage.getItem("input2"));
+$("#input3").attr("placeholder", localStorage.getItem("input3"));
+$("#input4").attr("placeholder", localStorage.getItem("input4"));
+$("#input5").attr("placeholder", localStorage.getItem("input5"));
+$("#input6").attr("placeholder", localStorage.getItem("input6"));
+$("#input7").attr("placeholder", localStorage.getItem("input7"));
+$("#input8").attr("placeholder", localStorage.getItem("input8"));
+$("#input9").attr("placeholder", localStorage.getItem("input9"));
+
 // JQuery event listener for the the button-addon1 to write the text in input1 to the label for input1
 $("#button-addon1").click(function () {
   // get the text for input1 from local storage
