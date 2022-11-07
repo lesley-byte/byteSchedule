@@ -43,7 +43,7 @@ function setColors() {
     //if hour is greater than 5pm, then set background color of .input-group to grey
   }
   if (thisHour0 >= 17) {
-    // id input1 through input9 have background color of dark grey
+    // id input1 through input9 have background color of grey
     $(".input-group").css("background-color", "#d9e9e8");
   } else if (thisHour0 <= 16 && thisHour0 > 15) {
     $(".input-group").css("background-color", "#d9e9e8");
