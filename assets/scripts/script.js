@@ -42,7 +42,7 @@ function setColors() {
     $("#input1").css({ "background-color": "#d3d3d3" });
     //if hour is greater than 5pm, then set background color of .input-group to grey
   }
-  if (thisHour0 > 17) {
+  if (thisHour0 >= 17) {
     // id input1 through input9 have background color of dark grey
     $(".input-group").css("background-color", "#d9e9e8");
   } else if (thisHour0 <= 16 && thisHour0 > 15) {
@@ -105,7 +105,7 @@ function setColors() {
     $("#input3").css({ "background-color": "#77dd77" });
     $("#input2").css({ "background-color": "#77dd77" });
     $("#input1").css({ "background-color": "#ff6961" });
-  } else if (thisHour0 < 8 && thisHour0 > 7) {
+  } else if (thisHour0 <= 8) {
     $("#input9").css({ "background-color": "#77dd77" });
     $("#input8").css({ "background-color": "#77dd77" });
     $("#input7").css({ "background-color": "#77dd77" });
@@ -117,19 +117,21 @@ function setColors() {
     $("#input1").css({ "background-color": "#77dd77" });
   }
 }
+function placeholderSetter() {
+  $("#input1").attr("placeholder", localStorage.getItem("input1"));
+  $("#input2").attr("placeholder", localStorage.getItem("input2"));
+  $("#input3").attr("placeholder", localStorage.getItem("input3"));
+  $("#input4").attr("placeholder", localStorage.getItem("input4"));
+  $("#input5").attr("placeholder", localStorage.getItem("input5"));
+  $("#input6").attr("placeholder", localStorage.getItem("input6"));
+  $("#input7").attr("placeholder", localStorage.getItem("input7"));
+  $("#input8").attr("placeholder", localStorage.getItem("input8"));
+  $("#input9").attr("placeholder", localStorage.getItem("input9"));
+}
 $("#currentDay").text("Today is " + now.format("dddd, MMMM D, YYYY"));
 setColors();
 logger();
-$("#input1").attr("placeholder", localStorage.getItem("input1"));
-$("#input2").attr("placeholder", localStorage.getItem("input2"));
-$("#input3").attr("placeholder", localStorage.getItem("input3"));
-$("#input4").attr("placeholder", localStorage.getItem("input4"));
-$("#input5").attr("placeholder", localStorage.getItem("input5"));
-$("#input6").attr("placeholder", localStorage.getItem("input6"));
-$("#input7").attr("placeholder", localStorage.getItem("input7"));
-$("#input8").attr("placeholder", localStorage.getItem("input8"));
-$("#input9").attr("placeholder", localStorage.getItem("input9"));
-
+placeholderSetter();
 // JQuery event listener for the the button-addon1 to write the text in input1 to the label for input1
 $("#button-addon1").click(function () {
   // get the text for input1 from local storage
