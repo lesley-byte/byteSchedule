@@ -134,10 +134,8 @@ logger();
 placeholderSetter();
 // JQuery event listener for the the button-addon1 to write the text in input1 to the label for input1
 $("#button-addon1").click(function () {
-  // get the text for input1 from local storage
-  $("#basic-addon1").text(localStorage.getItem("input1"));
-  $("#basic-addon1").attr("placeholder", localStorage.getItem("input1"));
   let input1 = $("#input1").val();
+  $("#label1").text(input1);
   localStorage.setItem("input1", input1);
 });
 
