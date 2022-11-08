@@ -55,7 +55,7 @@ logger();
 placeholderSetter();
 eventListeners();
 
-// time interval to call the functions every 5 minutes
+// time interval to call the functions every second
 setInterval(function () {
   now = dayjs();
   now0 = now;
