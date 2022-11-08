@@ -1,5 +1,9 @@
 var now = dayjs(); // real current time
 var now0 = now; // time that starts at real
+//variables for the time
+var hour = now.hour();
+var minute = now.minute();
+var second = now.second();
 //function to console.log
 function logger() {
   for (let i = 1; i <= 9; i++) {
@@ -38,8 +42,28 @@ function eventListeners() {
     });
   }
 }
-$("#currentDay").text("Today is " + now.format("dddd, MMMM D, YYYY")); // sets the date at the top
+function setCurrentDay() {
+  $("#currentDay").text(
+    "Today is " +
+      now.format("dddd, MMMM D, YYYY" + ` (${hour}:${minute}:${second})`)
+  ); // sets the date at the top
+}
+
+setCurrentDay();
 setColors();
 logger();
 placeholderSetter();
 eventListeners();
+
+// time interval to call the functions every 5 minutes
+setInterval(function () {
+  now = dayjs();
+  now0 = now;
+  hour = now.hour();
+  minute = now.minute();
+  second = now.second();
+  setCurrentDay();
+  setColors();
+  logger();
+  // placeholderSetter();
+}, 1000);
