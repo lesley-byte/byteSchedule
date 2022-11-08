@@ -60,6 +60,7 @@ setInterval(function () {
   now = dayjs();
   now0 = now;
   hour = now.hour();
+  thisHour0 = now0.hour();
   minute = now.minute();
   second = now.second();
   setCurrentDay();
